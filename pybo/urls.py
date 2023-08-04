@@ -19,3 +19,5 @@ urlpatterns = [
     path('answer/vote/<int:answer_id>/', answer_views.answer_vote, name='answer_vote'),
 
 ]
+
+handler404 = 'common.views.page_not_found'
